@@ -22,7 +22,13 @@ if (ini_get('allow_url_fopen')) {
 }
 
 $InstallData = array(
-	
+
+    'revo3.0.0-rc1'      => array(
+        'tree'     => 'Revolution',
+        'name'     => 'MODX Revolution 3.0.0 rc1 Traditional (20.01.2022)',
+        'link'     => 'https://modx.com/download/direct/modx-3.0.0-rc1.zip',
+        'location' => 'setup/index.php'
+    ),
     'revo2.8.3-pl'      => array(
         'tree'     => 'Revolution',
         'name'     => 'MODX Revolution 2.8.3 Traditional (05.28.2021)',

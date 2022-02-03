@@ -25,8 +25,8 @@ $InstallData = array(
 
     'revo3.0.0-rc1'      => array(
         'tree'     => 'Revolution',
-        'name'     => 'MODX Revolution 3.0.0 rc1 Traditional (01.20.2022)',
-        'link'     => 'https://modx.com/download/direct/modx-3.0.0-rc1.zip',
+        'name'     => 'MODX Revolution 3.0.0 rc2 Traditional (02.03.2022)',
+        'link'     => 'https://modx.com/download/direct/modx-3.0.0-rc2.zip',
         'location' => 'setup/index.php'
     ),
     'revo2.8.3-pl'      => array(

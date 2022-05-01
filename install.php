@@ -40,6 +40,24 @@ $InstallData = array(
         'name'     => 'MODX Revolution 3.0.0 SDK (03.30.2021)',
         'link'     => 'https://modx.s3.amazonaws.com/releases/3.0.0/modx-3.0.0-pl-sdk.zip',
         'location' => 'setup/index.php'
+    ),
+    'revo2.8.4-pl'      => array(
+        'tree'     => 'Revolution',
+        'name'     => 'MODX Revolution 2.8.4 Traditional (04.28.2022)',
+        'link'     => 'https://modx.s3.amazonaws.com/releases/2.8.4/modx-2.8.4-pl.zip',
+        'location' => 'setup/index.php'
+    ),
+    'revo2.8.4-ad'      => array(
+        'tree'     => 'Revolution',
+        'name'     => 'MODX Revolution 2.8.4 Advanced (04.28.2022)',
+        'link'     => 'https://modx.s3.amazonaws.com/releases/2.8.4/modx-2.8.4-pl-advanced.zip',
+        'location' => 'setup/index.php'
+    ),
+    'revo2.8.4-sdk'      => array(
+        'tree'     => 'Revolution',
+        'name'     => 'MODX Revolution 2.8.4 SDK (04.28.2022)',
+        'link'     => 'https://modx.s3.amazonaws.com/releases/2.8.4/modx-2.8.4-pl-sdk.zip',
+        'location' => 'setup/index.php'
     ),	
     'revo2.8.3-pl'      => array(
         'tree'     => 'Revolution',

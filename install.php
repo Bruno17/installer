@@ -1,5 +1,5 @@
 <?php
-$version = '1.6.30';
+$version = '1.6.31';
 
 error_reporting(0);
 ini_set('display_errors', 0);
@@ -23,7 +23,25 @@ if (ini_get('allow_url_fopen')) {
 
 $InstallData = array(
 
-    'revo3.0.0-pl'      => array(
+    'revo3.0.1-pl'      => array(
+        'tree'     => 'Revolution',
+        'name'     => 'MODX Revolution 3.0.1 pl Traditional (04.28.2022)',
+        'link'     => 'https://modx.s3.amazonaws.com/releases/3.0.1/modx-3.0.1-pl.zip',
+        'location' => 'setup/index.php'
+    ),
+    'revo3.0.1-ad'      => array(
+        'tree'     => 'Revolution',
+        'name'     => 'MODX Revolution 3.0.1 Advanced (04.28.2022)',
+        'link'     => 'https://modx.s3.amazonaws.com/releases/3.0.1/modx-3.0.1-pl-advanced.zip',
+        'location' => 'setup/index.php'
+    ),
+    'revo3.0.1-sdk'      => array(
+        'tree'     => 'Revolution',
+        'name'     => 'MODX Revolution 3.0.1 SDK (04.28.2022)',
+        'link'     => 'https://modx.s3.amazonaws.com/releases/3.0.1/modx-3.0.1-pl-sdk.zip',
+        'location' => 'setup/index.php'
+    ),
+	'revo3.0.0-pl'      => array(
         'tree'     => 'Revolution',
         'name'     => 'MODX Revolution 3.0.0 pl Traditional (03.30.2022)',
         'link'     => 'https://modx.s3.amazonaws.com/releases/3.0.0/modx-3.0.0-pl.zip',

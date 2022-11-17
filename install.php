@@ -1,5 +1,5 @@
 <?php
-$version = '1.6.31';
+$version = '1.6.32';
 
 error_reporting(0);
 ini_set('display_errors', 0);
@@ -22,7 +22,24 @@ if (ini_get('allow_url_fopen')) {
 }
 
 $InstallData = array(
-
+    'revo3.0.2-pl'      => array(
+        'tree'     => 'Revolution',
+        'name'     => 'MODX Revolution 3.0.2 pl Traditional (11.17.2022)',
+        'link'     => 'https://modx.s3.amazonaws.com/releases/3.0.2/modx-3.0.2-pl.zip',
+        'location' => 'setup/index.php'
+    ),
+    'revo3.0.2-ad'      => array(
+        'tree'     => 'Revolution',
+        'name'     => 'MODX Revolution 3.0.2 Advanced (11.17.2022)',
+        'link'     => 'https://modx.s3.amazonaws.com/releases/3.0.2/modx-3.0.2-pl-advanced.zip',
+        'location' => 'setup/index.php'
+    ),
+    'revo3.0.2-sdk'      => array(
+        'tree'     => 'Revolution',
+        'name'     => 'MODX Revolution 3.0.2 SDK (11.17.2022)',
+        'link'     => 'https://modx.s3.amazonaws.com/releases/3.0.2/modx-3.0.2-pl-sdk.zip',
+        'location' => 'setup/index.php'
+    ),
     'revo3.0.1-pl'      => array(
         'tree'     => 'Revolution',
         'name'     => 'MODX Revolution 3.0.1 pl Traditional (04.28.2022)',
@@ -188,27 +205,27 @@ class ModxInstaller {
                 curl_setopt($ch, CURLOPT_TIMEOUT, 50);
                 curl_setopt($ch, CURLOPT_FILE, $newf);
                 $safeMode = @ini_get('safe_mode');
-								$openBasedir = @ini_get('open_basedir');
-								if (empty($safeMode) && empty($openBasedir)) {
-    							curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+		$openBasedir = @ini_get('open_basedir');
+		if (empty($safeMode) && empty($openBasedir)) {
+    			curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
                 } else {
                 	curl_setopt($ch, CURLOPT_FOLLOWLOCATION, false);
                 	$rch = curl_copy_handle($ch);
                 	$newurl = $url;
-									curl_setopt($rch, CURLOPT_URL, $newurl);
-        					$header = curl_exec($rch);
-        					if (curl_errno($rch)) {
-          					$code = 0;
-        					} else {
-          					$code = curl_getinfo($rch, CURLINFO_HTTP_CODE);
-          					if ($code == 301 || $code == 302) {
-            					preg_match('/Location:(.*?)\n/i', $header, $matches);
-            					$newurl = trim(array_pop($matches));
+			curl_setopt($rch, CURLOPT_URL, $newurl);
+        		$header = curl_exec($rch);
+        		if (curl_errno($rch)) {
+          			$code = 0;
+        		} else {
+          			$code = curl_getinfo($rch, CURLINFO_HTTP_CODE);
+          			if ($code == 301 || $code == 302) {
+        	 			preg_match('/Location:(.*?)\n/i', $header, $matches);
+         				$newurl = trim(array_pop($matches));
                 		}
                 		curl_close($rch);
-      							curl_setopt($ch, CURLOPT_URL, $newurl);
-      					}
+      				curl_setopt($ch, CURLOPT_URL, $newurl);
       			}
+      		}
                 $data = curl_exec($ch);
                 curl_close($ch);
             } else {

@@ -19,11 +19,11 @@ Changelog:
 
 Version 1.6.33
 (2022/01/18)
-- Add link for Revo 3.03 pl
+- Add link for Revo 3.0.3 pl
 
 Version 1.6.32
 (2022/11/17)
-- Add link for Revo 3.02 pl
+- Add link for Revo 3.0.2 pl
 
 Version 1.6.31
 (2022/04/28)

@@ -1,5 +1,5 @@
 <?php
-$version = '1.6.32';
+$version = '1.6.33';
 
 error_reporting(0);
 ini_set('display_errors', 0);
@@ -22,6 +22,24 @@ if (ini_get('allow_url_fopen')) {
 }
 
 $InstallData = array(
+    'revo3.0.3-pl'      => array(
+        'tree'     => 'Revolution',
+        'name'     => 'MODX Revolution 3.0.3 pl Traditional (11.17.2022)',
+        'link'     => 'https://modx.s3.amazonaws.com/releases/3.0.3/modx-3.0.3-pl.zip',
+        'location' => 'setup/index.php'
+    ),
+    'revo3.0.3-ad'      => array(
+        'tree'     => 'Revolution',
+        'name'     => 'MODX Revolution 3.0.3 Advanced (11.17.2022)',
+        'link'     => 'https://modx.s3.amazonaws.com/releases/3.0.3/modx-3.0.3-pl-advanced.zip',
+        'location' => 'setup/index.php'
+    ),
+    'revo3.0.3-sdk'      => array(
+        'tree'     => 'Revolution',
+        'name'     => 'MODX Revolution 3.0.3 SDK (11.17.2022)',
+        'link'     => 'https://modx.s3.amazonaws.com/releases/3.0.3/modx-3.0.3-pl-sdk.zip',
+        'location' => 'setup/index.php'
+    ),	
     'revo3.0.2-pl'      => array(
         'tree'     => 'Revolution',
         'name'     => 'MODX Revolution 3.0.2 pl Traditional (11.17.2022)',
@@ -40,25 +58,7 @@ $InstallData = array(
         'link'     => 'https://modx.s3.amazonaws.com/releases/3.0.2/modx-3.0.2-pl-sdk.zip',
         'location' => 'setup/index.php'
     ),
-    'revo3.0.1-pl'      => array(
-        'tree'     => 'Revolution',
-        'name'     => 'MODX Revolution 3.0.1 pl Traditional (04.28.2022)',
-        'link'     => 'https://modx.s3.amazonaws.com/releases/3.0.1/modx-3.0.1-pl.zip',
-        'location' => 'setup/index.php'
-    ),
-    'revo3.0.1-ad'      => array(
-        'tree'     => 'Revolution',
-        'name'     => 'MODX Revolution 3.0.1 Advanced (04.28.2022)',
-        'link'     => 'https://modx.s3.amazonaws.com/releases/3.0.1/modx-3.0.1-pl-advanced.zip',
-        'location' => 'setup/index.php'
-    ),
-    'revo3.0.1-sdk'      => array(
-        'tree'     => 'Revolution',
-        'name'     => 'MODX Revolution 3.0.1 SDK (04.28.2022)',
-        'link'     => 'https://modx.s3.amazonaws.com/releases/3.0.1/modx-3.0.1-pl-sdk.zip',
-        'location' => 'setup/index.php'
-    ),
-	'revo3.0.0-pl'      => array(
+    'revo3.0.0-pl'      => array(
         'tree'     => 'Revolution',
         'name'     => 'MODX Revolution 3.0.0 pl Traditional (03.30.2022)',
         'link'     => 'https://modx.s3.amazonaws.com/releases/3.0.0/modx-3.0.0-pl.zip',
